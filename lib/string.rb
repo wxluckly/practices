@@ -1,5 +1,12 @@
-@catalog = 0
-p @catalog.split('-')[0]
+
+
+p 'exLAAn3qYWhlm13yjz+yAxy5924='.downcase!
+
+
+# -----------------------------------------------
+
+#@catalog = 0
+#p @catalog.split('-')[0]
 
 
 

@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'activesupport'
 require 'contacts_joey'
 
 p Contacts.new(:gmail,"wxl1test@gmail.com", "wxluckly").contacts

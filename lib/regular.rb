@@ -55,18 +55,18 @@
 
 # ---------------------------------------------------------------------------
 
-content = "系统监控到用户@风车365 @风车 为了重复领取优惠券，不断创建虚假用户，现已进行禁言处理！"
-call_users = content.scan(%r{@([^@\s：:]+)})
-p call_users
-call_users.each do |user|
-#  p user[0].to_s
-#  p user[1]
-  p user
-  user_url = '/user/content/'+user[0].to_s
-#  p user_url
-  content = content.gsub!('@'+user[0], '<a href="'+user_url+'"><@>'+user[0]+'</a>')
-end
-content.gsub!('<@>','@')
+#content = "系统监控到用户@风车365 @风车 为了重复领取优惠券，不断创建虚假用户，现已进行禁言处理！"
+#call_users = content.scan(%r{@([^@\s：:]+)})
+#p call_users
+#call_users.each do |user|
+##  p user[0].to_s
+##  p user[1]
+#  p user
+#  user_url = '/user/content/'+user[0].to_s
+##  p user_url
+#  content = content.gsub!('@'+user[0], '<a href="'+user_url+'"><@>'+user[0]+'</a>')
+#end
+#content.gsub!('<@>','@')
 #p content
 
 # ---------------------------------------------------------------------------
@@ -96,8 +96,10 @@ content.gsub!('<@>','@')
 #       p match }
 
 
-#email = 'wxluckly@gmail.com.cn'
-#p email.match(%r{^[a-zA-Z0-9_.-]+@[a-zA-Z0-9_-]+(?:(?:\.[a-zA-Z0-9_-]{2,3}){1,2})$})
+email = 'wxluckly@gmail.com.cn'
+email = 'afefea@QQ.com'
+p email.match(%r{^[a-zA-Z0-9_.-]+@[a-zA-Z0-9_-]+(?:(?:\.[a-zA-Z0-9_-]{2,3}){1,2})$})
+p email.match(%r{^([a-zA-Z0-9._-]){2,}@((?:[-a-zA-Z0-9]+\.)+[a-z]{2,})$})
 #p email. match(%r{.})
 #p email.match(%r{[^a-zA-Z0-9\s]})
 
